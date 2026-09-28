@@ -1,0 +1,6 @@
+{
+  "name": "DWPS Ballabgarh - School & Parent Portal",
+  "description": "Official mobile school and parent portal for Delhi World Public School Ballabgarh with real-time attendance, fee payments, circulars, calendar, academic utilities, and admin broadcast tools.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

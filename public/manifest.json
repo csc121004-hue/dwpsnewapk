@@ -1,0 +1,20 @@
+{
+  "id": "/",
+  "name": "Disney World Public School Portal",
+  "short_name": "Disney World",
+  "description": "Disney World Public School - Official School & Parent Mobile Portal",
+  "theme_color": "#00152f",
+  "background_color": "#f8fafc",
+  "display": "standalone",
+  "orientation": "portrait",
+  "start_url": "/",
+  "scope": "/",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

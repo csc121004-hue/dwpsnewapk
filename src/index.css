@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #00152f;
+  --color-primary-container: #0f2a4a;
+  --color-primary-fixed: #d4e3ff;
+  --color-primary-fixed-dim: #b0c8f0;
+  --color-on-primary: #ffffff;
+  --color-on-primary-container: #7a92b7;
+  --color-surface-card: #ffffff;
+  --color-surface-slate: #f8fafc;
+  --color-surface-container-low: #eff4ff;
+  --color-surface-container: #e5eeff;
+  --color-surface-container-high: #dce9ff;
+  --color-border-subtle: #e2e8f0;
+  --color-outline-variant: #c4c6cf;
+  --color-outline: #74777f;
+  --color-secondary: #9b4500;
+  --color-on-secondary: #ffffff;
+  --color-gold-tint: #fffbeb;
+  --color-gold-light: #fde68a;
+  --color-attendance-present: #10b981;
+  --color-attendance-absent: #ef4444;
+  --color-attendance-late: #f59e0b;
+  --color-on-surface: #0b1c30;
+  --color-on-surface-variant: #43474e;
+  --font-display: "Playfair Display", serif;
+  --font-body: "Outfit", sans-serif;
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  background-color: #f8fafc;
+  color: #0b1c30;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1;
+}
+
+.material-symbols-outlined.fill-1 {
+  font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+/* Custom scrollbar for mobile feel */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 9999px;
+}

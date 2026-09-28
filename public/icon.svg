@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="goldRim" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f6d375" />
+      <stop offset="50%" stop-color="#d49b35" />
+      <stop offset="100%" stop-color="#b0751a" />
+    </linearGradient>
+    <clipPath id="shieldInnerClip">
+      <path d="M 250 45 C 335 45 400 68 400 150 C 400 285 310 375 250 415 C 190 375 100 285 100 150 C 100 68 165 45 250 45 Z" />
+    </clipPath>
+  </defs>
+
+  <!-- Outer Golden Shield Rim -->
+  <path d="M 250 25 C 355 25 425 50 425 150 C 425 315 320 415 250 460 C 180 415 75 315 75 150 C 75 50 145 25 250 25 Z"
+        fill="url(#goldRim)" stroke="#8e580e" stroke-width="6" stroke-linejoin="round" />
+
+  <!-- Inner White Border -->
+  <path d="M 250 38 C 340 38 405 60 405 145 C 405 295 314 385 250 425 C 186 385 95 295 95 145 C 95 60 160 38 250 38 Z"
+        fill="#ffffff" stroke="#c5902b" stroke-width="4" />
+
+  <!-- Quadrants Container -->
+  <g clip-path="url(#shieldInnerClip)">
+    <!-- 1. Top Left: Deep Navy with Castle -->
+    <rect x="0" y="0" width="250" height="230" fill="#1b3958" />
+    <g fill="#76c3b4" transform="translate(145, 80) scale(0.9)">
+      <rect x="35" y="55" width="40" height="60" />
+      <path d="M 32 55 L 55 15 L 78 55 Z" />
+      <rect x="52" y="5" width="6" height="15" />
+      <path d="M 58 5 L 70 10 L 58 15 Z" fill="#76c3b4" />
+      <rect x="15" y="70" width="22" height="45" />
+      <path d="M 12 70 L 26 35 L 40 70 Z" />
+      <rect x="73" y="70" width="22" height="45" />
+      <path d="M 70 70 L 84 35 L 98 70 Z" />
+      <path d="M 45 115 A 10 10 0 0 1 65 115 Z" fill="#1b3958" />
+    </g>
+
+    <!-- 2. Top Right: Golden Ochre with Open Book & Cap -->
+    <rect x="250" y="0" width="250" height="230" fill="#e7a532" />
+    <g transform="translate(275, 85)">
+      <polygon points="75,15 130,35 75,55 20,35" fill="#1a3556" stroke="#ffffff" stroke-width="2" />
+      <g fill="#ffffff" stroke="#1a3556" stroke-width="2">
+        <path d="M 72 70 C 50 67 20 69 15 76 L 15 125 C 22 118 52 116 72 122 Z" />
+        <path d="M 78 70 C 100 67 130 69 135 76 L 135 125 C 128 118 98 116 78 122 Z" />
+      </g>
+    </g>
+
+    <!-- 3. Bottom Left: Crimson Red with Stack of Books & Cap -->
+    <rect x="0" y="230" width="250" height="250" fill="#a4282a" />
+    <g transform="translate(145, 235)">
+      <polygon points="55,20 95,35 55,50 15,35" fill="#ffffff" stroke="#a4282a" stroke-width="2" />
+      <g fill="#ffffff" stroke="#7e1719" stroke-width="2">
+        <polygon points="25,62 85,55 95,68 35,76" />
+        <polygon points="18,84 88,78 98,92 28,100" />
+        <polygon points="12,108 92,102 102,118 22,126" />
+      </g>
+    </g>
+
+    <!-- 4. Bottom Right: Seafoam Teal with Mickey Silhouette & World Orbit -->
+    <rect x="250" y="230" width="250" height="250" fill="#52a192" />
+    <g transform="translate(290, 240)">
+      <ellipse cx="65" cy="70" rx="55" ry="24" fill="none" stroke="#ffffff" stroke-width="3" transform="rotate(-25 65 70)" />
+      <ellipse cx="65" cy="70" rx="55" ry="24" fill="none" stroke="#ffffff" stroke-width="3" transform="rotate(35 65 70)" />
+      <circle cx="65" cy="74" r="28" fill="#ffffff" />
+      <circle cx="40" cy="46" r="18" fill="#ffffff" />
+      <circle cx="90" cy="46" r="18" fill="#ffffff" />
+    </g>
+
+    <!-- Dividing Cross -->
+    <rect x="244" y="0" width="12" height="450" fill="#ffffff" />
+    <line x1="250" y1="0" x2="250" y2="450" stroke="#d49b35" stroke-width="4" />
+    <rect x="0" y="224" width="500" height="12" fill="#ffffff" />
+    <line x1="0" y1="230" x2="500" y2="230" stroke="#d49b35" stroke-width="4" />
+  </g>
+</svg>

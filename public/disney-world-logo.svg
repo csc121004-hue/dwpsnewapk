@@ -1,0 +1,149 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 550" width="100%" height="100%">
+  <defs>
+    <!-- Gold Gradient for Shield Rim and Ribbon -->
+    <linearGradient id="goldRim" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f6d375" />
+      <stop offset="50%" stop-color="#d49b35" />
+      <stop offset="100%" stop-color="#b0751a" />
+    </linearGradient>
+    <linearGradient id="ribbonGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fae8b8" />
+      <stop offset="50%" stop-color="#f0cb80" />
+      <stop offset="100%" stop-color="#dcab56" />
+    </linearGradient>
+    <filter id="dropShadow" x="-10%" y="-10%" width="120%" height="125%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#000" flood-opacity="0.25" />
+    </filter>
+    <!-- Clip path for the 4 quadrants inside the shield -->
+    <clipPath id="shieldInnerClip">
+      <path d="M 250 45 C 335 45 400 68 400 150 C 400 285 310 375 250 415 C 190 375 100 285 100 150 C 100 68 165 45 250 45 Z" />
+    </clipPath>
+  </defs>
+
+  <g filter="url(#dropShadow)">
+    <!-- Outer Golden Shield Rim -->
+    <path d="M 250 30 C 355 30 425 55 425 155 C 425 315 320 415 250 460 C 180 415 75 315 75 155 C 75 55 145 30 250 30 Z"
+          fill="url(#goldRim)" stroke="#8e580e" stroke-width="4" stroke-linejoin="round" />
+
+    <!-- Inner Shield Boundary Border -->
+    <path d="M 250 42 C 340 42 405 65 405 150 C 405 290 314 380 250 420 C 186 380 95 290 95 150 C 95 65 160 42 250 42 Z"
+          fill="#ffffff" stroke="#c5902b" stroke-width="3" />
+
+    <!-- Quadrants Container clipped to Shield Shape -->
+    <g clip-path="url(#shieldInnerClip)">
+      <!-- 1. Top Left: Deep Navy with Seafoam Castle -->
+      <rect x="0" y="0" width="250" height="230" fill="#1b3958" />
+      <!-- Castle Silhouette -->
+      <g fill="#76c3b4" transform="translate(145, 80) scale(0.9)">
+        <!-- Center Keep -->
+        <rect x="35" y="55" width="40" height="60" />
+        <path d="M 32 55 L 55 15 L 78 55 Z" />
+        <rect x="52" y="5" width="6" height="15" />
+        <path d="M 58 5 L 70 10 L 58 15 Z" fill="#76c3b4" />
+        <!-- Left Tower -->
+        <rect x="15" y="70" width="22" height="45" />
+        <path d="M 12 70 L 26 35 L 40 70 Z" />
+        <!-- Right Tower -->
+        <rect x="73" y="70" width="22" height="45" />
+        <path d="M 70 70 L 84 35 L 98 70 Z" />
+        <!-- Turrets & Windows -->
+        <path d="M 45 115 A 10 10 0 0 1 65 115 Z" fill="#1b3958" />
+        <rect x="49" y="70" width="12" height="18" rx="6" fill="#1b3958" />
+        <rect x="22" y="80" width="8" height="12" rx="4" fill="#1b3958" />
+        <rect x="80" y="80" width="8" height="12" rx="4" fill="#1b3958" />
+      </g>
+
+      <!-- 2. Top Right: Golden Ochre with Open Book & Mortarboard -->
+      <rect x="250" y="0" width="250" height="230" fill="#e7a532" />
+      <g transform="translate(275, 85)">
+        <!-- Mortarboard Cap -->
+        <polygon points="75,15 130,35 75,55 20,35" fill="#1a3556" stroke="#ffffff" stroke-width="1.5" />
+        <rect x="63" y="48" width="24" height="12" rx="2" fill="#1a3556" />
+        <circle cx="75" cy="35" r="4" fill="#d99928" />
+        <path d="M 75 35 Q 120 40 125 58" fill="none" stroke="#d99928" stroke-width="3" stroke-linecap="round" />
+        <circle cx="125" cy="62" r="3" fill="#d99928" />
+        <!-- Open Book -->
+        <g fill="#ffffff" stroke="#1a3556" stroke-width="2">
+          <!-- Left Pages -->
+          <path d="M 72 70 C 50 67 20 69 15 76 L 15 125 C 22 118 52 116 72 122 Z" />
+          <path d="M 22 84 L 64 80 M 22 94 L 64 90 M 22 104 L 64 100" stroke="#1a3556" stroke-width="2" />
+          <!-- Right Pages -->
+          <path d="M 78 70 C 100 67 130 69 135 76 L 135 125 C 128 118 98 116 78 122 Z" />
+          <path d="M 86 80 L 128 84 M 86 90 L 128 94 M 86 100 L 128 104" stroke="#1a3556" stroke-width="2" />
+        </g>
+      </g>
+
+      <!-- 3. Bottom Left: Crimson Red with Stack of Books & Cap -->
+      <rect x="0" y="230" width="250" height="250" fill="#a4282a" />
+      <g transform="translate(145, 235)">
+        <!-- Mortarboard Cap atop books -->
+        <polygon points="55,20 95,35 55,50 15,35" fill="#ffffff" stroke="#a4282a" stroke-width="2" />
+        <rect x="46" y="46" width="18" height="10" fill="#ffffff" />
+        <!-- Stack of Books -->
+        <g fill="#ffffff" stroke="#7e1719" stroke-width="2">
+          <!-- Book 1 (Top) -->
+          <polygon points="25,62 85,55 95,68 35,76" />
+          <polygon points="25,62 35,76 35,84 25,70" fill="#e9d2d3" />
+          <polygon points="35,76 95,68 95,76 35,84" fill="#ffffff" />
+          <!-- Book 2 (Middle) -->
+          <polygon points="18,84 88,78 98,92 28,100" />
+          <polygon points="18,84 28,100 28,108 18,92" fill="#e9d2d3" />
+          <polygon points="28,100 98,92 98,100 28,108" fill="#ffffff" />
+          <!-- Book 3 (Bottom) -->
+          <polygon points="12,108 92,102 102,118 22,126" />
+          <polygon points="12,108 22,126 22,135 12,117" fill="#e9d2d3" />
+          <polygon points="22,126 102,118 102,127 22,135" fill="#ffffff" />
+        </g>
+      </g>
+
+      <!-- 4. Bottom Right: Seafoam Teal with Mickey Silhouette & World Orbit -->
+      <rect x="250" y="230" width="250" height="250" fill="#52a192" />
+      <g transform="translate(290, 240)">
+        <!-- Orbital Rings -->
+        <ellipse cx="65" cy="70" rx="55" ry="24" fill="none" stroke="#ffffff" stroke-width="3" transform="rotate(-25 65 70)" />
+        <ellipse cx="65" cy="70" rx="55" ry="24" fill="none" stroke="#ffffff" stroke-width="3" transform="rotate(35 65 70)" />
+        <!-- Mickey Head Silhouette in White -->
+        <circle cx="65" cy="74" r="28" fill="#ffffff" />
+        <circle cx="40" cy="46" r="18" fill="#ffffff" />
+        <circle cx="90" cy="46" r="18" fill="#ffffff" />
+        <!-- Continental / Magic detail inside globe -->
+        <path d="M 58 60 Q 66 52 74 62 Q 72 78 64 88 Q 54 82 58 60 Z" fill="#52a192" />
+        <path d="M 64 88 L 64 105" stroke="#ffffff" stroke-width="3" stroke-linecap="round" />
+        <polygon points="60,105 68,105 64,112" fill="#ffffff" />
+      </g>
+
+      <!-- Central Dividing Cross (White with Gold Line) -->
+      <!-- Vertical divider -->
+      <rect x="244" y="0" width="12" height="450" fill="#ffffff" />
+      <line x1="250" y1="0" x2="250" y2="450" stroke="#d49b35" stroke-width="3" />
+      <!-- Horizontal divider -->
+      <rect x="0" y="224" width="500" height="12" fill="#ffffff" />
+      <line x1="0" y1="230" x2="500" y2="230" stroke="#d49b35" stroke-width="3" />
+    </g>
+  </g>
+
+  <!-- LOWER BANNER RIBBON (DISNEY WORLD PUBLIC SCHOOL) -->
+  <g filter="url(#dropShadow)" transform="translate(0, 400)">
+    <!-- Ribbon Tails Back folds -->
+    <path d="M 35 70 L 95 30 L 95 90 Z" fill="#b0751a" />
+    <path d="M 465 70 L 405 30 L 405 90 Z" fill="#b0751a" />
+    <!-- Ribbon Tail Left -->
+    <path d="M 15 85 L 95 45 L 95 105 L 15 145 L 45 115 Z" fill="url(#ribbonGrad)" stroke="#c28c25" stroke-width="3" stroke-linejoin="round" />
+    <!-- Ribbon Tail Right -->
+    <path d="M 485 85 L 405 45 L 405 105 L 485 145 L 455 115 Z" fill="url(#ribbonGrad)" stroke="#c28c25" stroke-width="3" stroke-linejoin="round" />
+
+    <!-- Main Ribbon Front Banner -->
+    <path d="M 60 55 C 180 25 320 25 440 55 C 445 75 445 95 435 115 C 320 85 180 85 65 115 C 55 95 55 75 60 55 Z"
+          fill="url(#ribbonGrad)" stroke="#b57e1c" stroke-width="4" />
+
+    <!-- Main School Name Text in Arch/Curved feel -->
+    <text x="250" y="82" font-family="'Outfit', 'Arial Black', sans-serif" font-size="22" font-weight="800" fill="#1b3958" text-anchor="middle" letter-spacing="1.5">
+      DISNEY WORLD PUBLIC SCHOOL
+    </text>
+
+    <!-- Subtitle Motto: "Knowledge is Our Magic" -->
+    <text x="250" y="132" font-family="'Outfit', sans-serif" font-size="20" font-weight="600" fill="#2c4d6f" text-anchor="middle" letter-spacing="0.5">
+      Knowledge is Our Magic
+    </text>
+  </g>
+</svg>
